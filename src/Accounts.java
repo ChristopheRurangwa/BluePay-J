@@ -42,7 +42,7 @@ public class Accounts {
 
 		double balance= avalBal-cardCharges-appCharges-occurringCharges;
 		 
-		sav.add(1, balance);
+		sav.add(1,balance);
 		sav.add(2,avalBal);
 		sav.add(3,cardCharges);
 		sav.add(4,appCharges); 

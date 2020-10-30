@@ -10,7 +10,7 @@ public class MoneyProcesses extends Accounts {
 		
 		if(sav.get(0)!=0) {
 			
-		System.out.println("The current balance available is: "+sav.get(0));}
+		System.out.println("The current Total saving available is: "+sav.get(0));}
 		
 		if(sav.get(2)!=0) {
 			
