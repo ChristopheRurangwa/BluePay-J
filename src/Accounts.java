@@ -14,7 +14,7 @@ public class Accounts {
 	 */
 	
 	public static double savingAcct(double save) {
-		double savings = 0;
+		double savings = 100;
 		
 		double total=savings+save;
 		
@@ -33,9 +33,9 @@ public class Accounts {
 	 * @return 
 	 */
 	
-	public static double checkingAcct(double avalBal, double cardCharges,double occurringCharges,double save ) {
+	public static double checkingAcct( double cardCharges,double occurringCharges,double save) {
 		
-		avalBal=savingAcct(save);//$
+		double avalBal=savingAcct(save);//$
 		
 		final double appCharges=0.10;// cents 
 		
