@@ -10,6 +10,7 @@ public class BluePay {
 		Scanner scan=new Scanner(System.in);
 		
 		double charges=0.0;
+		double val=0.0;
 		
 		System.out.println("\n");
 		System.out.println("             |---WELCOME TO BLUEPAY---|\n\n");
@@ -25,7 +26,6 @@ public class BluePay {
 		System.out.println("||                                                ||\n||");
 		System.out.println("||5. CHECK SWIPE-OCCURING PAYMENT.                ||\n||");
 		System.out.println("||                                                ||\n||");
-		System.out.println("||6. WITHDRAW FROM SAVING ACCOUNT.                ||\n||");
 		System.out.println("||____________________******_____________________||\n");
 		
 		
@@ -54,8 +54,9 @@ public class BluePay {
 			System.out.print("AVAILABLE AMOUNT IS: $"+Accounts.savingAcct(5673));
 			}
 			break;
-		case 4:{
-				
+		case 4:{System.out.print("Enter amount to be charged for every swipe, enter 0.0 for not none.\n");
+					charges=scan.nextDouble();
+				Accounts.charg(400,charges,Accounts.savingAcct(5793));
 			
 		       }
 			break;

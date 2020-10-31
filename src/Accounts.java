@@ -51,6 +51,18 @@ public class Accounts {
 		return sav.get(1);
 	}
 	
+	public static double charg( double cardCharges,double occurringCharges,double save) {
+		
+		checkingAcct(cardCharges, occurringCharges,save);
+		
+		System.out.println("Card charges: $"+sav.get(3));
+		System.out.println("App charges: $"+sav.get(4));
+		System.out.println("Occurring charges: $"+sav.get(5));
+		
+		return 0;
+		
+	}
+	
 	
 	
 	
