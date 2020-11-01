@@ -63,6 +63,23 @@ public class Accounts {
 		
 	}
 	
+	public static double loanLoad(double occurringCharges, double owedAmount) {
+		
+		
+		double toBPaid= owedAmount-occurringCharges;
+		sav.add(0,toBPaid);
+		if(occurringCharges<owedAmount) {
+		System.out.println("you have $"+sav.get(0)+" left to be paid.");
+		
+		System.out.println("If you pay $"+occurringCharges +
+				" in 30 days, you will have $"+occurringCharges*30+
+				" deducted from your account. You will only have $"+(owedAmount-(occurringCharges*30))+" left to be paid.");}
+		else { System.out.println("The amount you entered covered $"+occurringCharges+" covered your loan. You have a refund of $"+(occurringCharges-owedAmount));}
+		
+		
+		return toBPaid;
+	}
+	
 	
 	
 	

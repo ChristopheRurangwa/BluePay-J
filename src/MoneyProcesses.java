@@ -12,9 +12,9 @@ public class MoneyProcesses extends Accounts {
 			
 		System.out.println(" The current Total saving available is: $"+sav.get(0)+"\n");}
 		
-		if(sav.get(2)!=0.0) {
+		if(sav.get(1)!=0.0) {
 			
-		System.out.println(" Your balance available is: $"+sav.get(2)+"\n");}
+		System.out.println(" Your balance available is: $"+sav.get(1)+"\n");}
 		
 		
 		if(sav.get(4)!=0.0||sav.get(3)!=0.0||sav.get(5)!=0.0) {
